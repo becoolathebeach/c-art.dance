@@ -1,0 +1,820 @@
+/*see Ken Taylor Figma doc
+ *
+ *font			        size    line	weight	short	map
+ *name			        SM	MAX	SM	MAX		    ID	    to
+ * ---------------------------------------------------------------------------
+ *fluid-display-03	    42	84	50	94	    600 FD-03	h1
+ *fluid-quotation-02	32	60	40	70	    300 FQ-02	h2
+ *fluid-heading-06	    32	60	40	70	    600 FH-06	h3
+ *fluid-heading-05	    32	60	40	70	    300 FH-05	h4
+ *fluid-heading-04	    28	32	36	40	    300 FH-04	h5
+ *heading-compact-02 	-	1.0	-	1.375	600	HC-02	h6
+ *body-02		        -	1.0	-	1.5	    400	BD-02	p
+ *
+ * for clamp() ramping, see "https://modern-fluid-typography.vercel.app/"
+ *
+ *
+ */
+
+
+:root {
+    --h1-size: clamp(2.625rem, 5vw + 1.5rem, 5.25rem);
+    --h1-line: clamp(3.125rem, 5vw + 2rem, 5.875rem);
+    --h1-weight: 600;
+
+    --h2-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h2-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h2-weight: 300;
+
+    --h3-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h3-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h3-weight: 600;
+
+    --h4-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h4-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h4-weight: 300;
+
+    --h5-size: clamp(1.75rem, 2vw + 1.25rem, 2rem);
+    --h5-line: clamp(2.25rem, 4vw + 1.25rem, 2.5rem);
+    --h5-weight: 300;
+
+    --h6-size: 1rem;
+    --h6-line: 1.375rem;
+    --h6-weight: 600;
+
+    --p-size: 12px;
+    --p-line: 16px;
+    --p-weight: 400;
+
+    
+    --azul60:      #2D61FF;
+
+    --neonblue60:   #4E5EF7 ;
+    --royalblue60:  #6B59EF ;
+    --iris60:       #8351E7 ;
+    --purpleheart60:#9846E0;
+    --darkviolet60: #AC37D6;
+    --violet60:     #BE21CC;
+
+
+
+    --purple30hover:    #c5a3ff;
+    --red30hover:       #ff99a0;
+    --green20hover:     #74e792;
+    --yellow10:         #fafa77;
+    --orange30hover:    #ff9d57;
+    --blue40hover:      #5c97ff;
+    --magenta20hover:   #ffbdda;
+
+
+    --white0:   #ffffff;
+    --black110: #000000;
+    --grey10:   #f4f4f4;
+    --grey20:   #e0e0e0;
+    --grey90:   #232429;
+    --grey100:  #121419;
+
+    --gap-xs : 0.128;
+    --gap-s  : 0.272;
+    --gap-m  : 0.618;
+    --gap-l  : 1;
+    --gap-xl : 1.618;
+    --gap-xxl: 2.618;
+
+
+    --font-size: 16px;
+    --ff: "geo";
+    --padding: 1rem;
+    --max-width: 1536px;
+
+}
+
+@font-face {
+    font-family: "geo";
+    font-style: normal;
+    font-weight: 300;
+    src: url(./assets/fonts/GeologicaRoman-Thin.woff2);
+}
+
+@font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/fonts/GeologicaRoman-ExtraLight.woff2);
+}
+
+@font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/fonts/GeologicaRoman-Light.woff2);
+}
+
+h1 {
+    font-family: var(--ff);
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+    font-weight: var(--h1-weight);
+}
+
+
+h2 {
+    font-family: var(--ff);
+    font-size: var(--h2-size);
+    line-height: var(--h2-line);
+    font-weight: var(--h2-weight);
+}
+
+h3 {
+    font-family: var(--ff);
+    font-size: var(--h3-size);
+    line-height: var(--h3-line);
+    font-weight: var(--h3-weight);
+}
+
+h4 {
+    font-family: var(--ff);
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
+    font-weight: var(--h4-weight);
+}
+
+h5 {
+    font-family: var(--ff);
+    font-size: var(--h5-size);
+    line-height: var(--h5-line);
+    font-weight: var(--h5-weight);
+}
+
+h6 {
+    font-family: var(--ff);
+    font-size: var(--h6-size);
+    line-height: var(--h6-line);
+    font-weight: var(--h6-weight);
+}
+
+p {
+    font-family: var(--ff);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    font-weight: var(--p-weight);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: var(--font-size);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: var(--gray10);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+.alnitm-base {
+    align-items: baseline;
+}
+.alnitm-cen {
+    align-items: center;
+}
+
+.alnitm-end {
+    align-items: end;
+}
+
+.back-az60 {
+    background-color: var(--azul60);
+}
+
+.back-gr10 {
+    background-color: var(--grey10);
+}
+
+.back-gr20 {
+    background-color: var(--grey20);
+}
+
+.back-vl60 {
+    background-color: var(--violet60);
+}
+
+.back-whit {
+    background-color: white;
+}
+
+.back-red {
+    background: red;
+}
+
+.bkim-hero {
+    background-image: url(./assets/images/symbol-lines-rgb-1.svg);
+    background-repeat: repeat;
+    background-size: 10px;
+    height: 890px;
+    width: 100%;
+}
+
+.bkim-hero2 {
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_2000x890.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 890px;
+}
+
+.bkim-what {
+    background-image: url(./assets/images/Incision_Pompidou_Foto_Daniel_Perez_11_2000x890.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 890px;
+    opacity: 0.25;
+}
+
+.bkim-comm {
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_16x9_1536px.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bkim-social {
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_16x9_1920px.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    ;
+}
+
+.bord-red {
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+.bord-rite {
+    border-right: 1px solid black;
+}
+
+
+.brcl-colp {
+    border-collapse: collapse;
+}
+
+.colr-whit {
+    color: var(--white0);
+}
+
+.colr-az60 {
+    color: var(--azul60);
+}
+
+.colr-vl60 {
+    color: var(--violet60);
+}
+
+.curs-pont {
+    cursor: pointer;
+}
+
+.disp-grid {
+    display: grid;
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.flxdir-col {
+    flex-direction: column;
+}
+
+.gap-pad {
+    gap: var(--padding) ;
+}
+
+.gap-pm {
+    gap: calc(var(--p-size) * var(--gap-m) );
+}
+
+.gap-zero {
+    gap: 0;
+}
+
+.grcl-1sp3 {
+    grid-column: 1 / span 3 ;
+}
+
+.grtc-21fr {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grtc-31fr {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grtc-41fr {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grtc-81fr {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+.higt-full {
+    height: 100%;
+}
+
+.higt-1rem {
+    height: 16px;
+}
+
+.higt-2rem {
+    height: 48px;
+}
+
+.higt-4rem {
+    height: 96px;
+}
+
+.juscon-cen {
+    justify-content: center;
+}
+
+.juscon-end {
+    justify-content: flex-end;
+}
+
+.juscon-spbt {
+    justify-content: space-between;
+}
+
+.juscon-spev {
+    justify-content: space-evenly;
+}
+
+.line-whit {
+    border-bottom: 1px solid white;
+}
+
+.line-gr90 {
+    border-bottom: 1px solid var(--grey90);
+}
+
+.logo {
+    max-width: 3rem;
+}
+
+.main-auto {
+    margin-inline: auto;
+}
+
+.malr-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.malr-1rem {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.malr-h3 {
+    margin-left: var(--h3-size);
+    margin-right: var(--h3-size);
+}
+
+
+.mnht-100 {
+    min-height: 100%;
+}
+
+.mxht-200 {
+    max-height: 200px;
+}
+
+.mxht-60vh {
+    max-height: 60vh;
+}
+
+
+.mxwd-48p {
+    max-width: 48px;
+}
+
+.mxwd-100p {
+    max-width: 100px;
+}
+
+.mxwd-140 {
+    max-width: 140px;
+}
+
+.mxwd-200 {
+    max-width: 200px;
+}
+
+.mxwd-384 {
+    max-width: 384px;
+}
+
+.mxwd-768 {
+    max-width: 768px;
+}
+
+.mxwd-1536 {
+    max-width: 1536px;
+}
+
+
+
+.pad-pad {
+    padding: var(--padding);
+}
+
+.padl-p {
+    padding-left: var(--p-size);
+}
+
+.padb-h1xs {
+    padding-bottom: calc(var(--h1-size) * var(--gap-xs) );
+}
+
+.padb-h1m {
+    padding-bottom: calc(var(--h1-size) * var(--gap-m) );
+}
+
+.padb-h3xs {
+    padding-bottom: calc(var(--h3-size) * var(--gap-xs) );
+}
+
+.padb-h3m {
+    padding-bottom: calc(var(--h3-size) * var(--gap-m) );
+}
+
+.padb-h2m {
+    padding-bottom: calc(var(--h2-size) * var(--gap-m) );
+}
+
+.padb-h4xs {
+    padding-bottom: calc(var(--h4-size) * var(--gap-xs) );
+}
+
+.padb-h4m {
+    padding-bottom: calc(var(--h4-size) * var(--gap-m) );
+}
+
+.padb-h4s {
+    padding-bottom: calc(var(--h4-size) * var(--gap-s) );
+}
+
+.padb-h4l {
+    padding-bottom: calc(var(--h4-size) * var(--gap-l) );
+}
+
+.padb-h5m {
+    padding-bottom: calc(var(--h5-size) * var(--gap-m) );
+}
+
+.padb-h5xl {
+    padding-bottom: calc(var(--h5-size) * var(--gap-xl) );
+}
+
+.padb-h5xs {
+    padding-bottom: calc(var(--h5-size) * var(--gap-xs) );
+}
+
+.padb-h6m {
+    padding-bottom: calc(var(--h6-size) * var(--gap-m) );
+}
+
+.padb-pxl {
+    padding-bottom: calc(var(--p-size) * var(--gap-xl) );
+}
+
+.padb-pm {
+    padding-bottom: calc(var(--p-size) * var(--gap-m) );
+}
+
+.padb-10rm {
+    padding-bottom: 10rem ;
+}
+
+.padb-5rm {
+    padding-bottom: 5rem ;
+}
+
+.pdr-pad {
+    padding-right: var(--padding);
+}
+
+.padr-100 {
+    padding-right: 100px;
+}
+
+.padt-h4sp {
+    --h4-space-diff: calc( calc(var(--h4-line) - var(--h4-size)) * 0.5) ;
+    padding-top: var(--h4-space-diff);
+}
+
+.padt-10rm {
+    padding-top: 10rem;
+}
+
+.padt-5rm {
+    padding-top: 5rem;
+}
+
+.padt-h1xs {
+    padding-top: calc(var(--h1-size) * var(--gap-xs) );
+}
+
+
+
+
+
+.pdlrtb-h1 {
+    --h1-space-diff: calc( calc(var(--h1-line) - var(--h1-size)) * 0.5) ;
+    padding-top: calc(var(--h1-size) - var(--h1-space-diff) )  ;
+    
+    padding-left: var(--h1-size);
+    padding-right: var(--h1-size);
+    padding-bottom: var(--h1-size);
+
+}
+
+.pdlrtb-h3 {
+    --h3-space-diff: calc( calc(var(--h3-line) - var(--h3-size)) * 0.5) ;
+    padding-top: calc(var(--h3-size) - var(--h3-space-diff) )  ;
+    
+    padding-left: var(--h3-size);
+    padding-right: var(--h3-size);
+    padding-bottom: var(--h3-size);
+
+}
+
+.pdlrtb-h5 {
+    --h5-space-diff: calc( calc(var(--h5-line) - var(--h5-size)) * 0.5) ;
+    padding-top: calc(var(--h5-size) - var(--h5-space-diff) )  ;
+    
+    padding-left: var(--h5-size);
+    padding-right: var(--h5-size);
+    padding-bottom: var(--h5-size);
+}
+
+.pdlrtb-h6 {
+    --h6-space-diff: calc( calc(var(--h6-line) - var(--h6-size)) * 0.5) ;
+    padding-top: calc(var(--h6-size) - var(--h6-space-diff) )  ;
+    
+    padding-left: var(--h6-size);
+    padding-right: var(--h6-size);
+    padding-bottom: var(--h6-size);
+}
+
+.pdlrtb-p {
+    --p-space-diff: calc( calc(var(--p-line) - var(--p-size)) * 0.5) ;
+    padding-top: calc(var(--p-size) - var(--p-space-diff) )  ;
+    
+    padding-left: var(--p-size);
+    padding-right: var(--p-size);
+    padding-bottom: var(--p-size);
+}
+
+.pdlr-pad {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.pdtb-h5 {
+    padding-top: var(--h5-size);
+    padding-bottom: var(--h5-size);
+}
+
+.posi-rela {
+    position: relative;
+}
+
+
+.trfm-trlt {
+    transform: translateY(-200px);
+}
+
+.wdth-4rem {
+    width: 5rem;
+}
+.wdth-full {
+    width: 100%;
+}
+.wdth-20pc {
+    width: 20%;
+}
+.wdth-60pc {
+    width: 60%;
+}
+
+
+.youtube {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+#tableHir1 td {
+    padding: var(--padding);
+    text-align: left;
+}
+
+#tableHir2 td {
+    text-align: center;
+    padding: var(--padding);
+}
+
+#tableHir2 tr:nth-of-type(2n) {
+}
+
+#tableHir2 tr:nth-of-type(2n) td {
+    padding: 0px;
+}
+
+
+@media (max-width: 768px) {
+
+    td {
+        display: block;
+    }
+
+    #tableHir2 {
+        width: 100%;
+        background-color: 
+    }
+
+    #tableHir1 td {
+        padding: 0;
+    }
+
+    #tableHir2 td {
+    }
+
+    #tableHir2 tr:nth-of-type(2n) td {
+        margin-bottom: 4rem;
+    }
+
+
+
+    .med\:alnitm-0 {
+        align-items: start;
+    }
+    
+    .med\:alnitm-cen {
+        align-items: center ;
+    }
+    
+    .med\:alnitm-norm {
+        align-items: normal;
+    }
+
+    .med\:bkim-comm {
+        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_4x5_430px.png);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .med\:ftsz-zero {
+        font-size: 0;
+    }
+
+    .med\:flxdir-col {
+        flex-direction: column;
+    }
+
+    .med\:flxdir-row {
+        flex-direction: row;
+    }
+
+    .med\:juscon-left {
+        justify-content: left;
+    }
+    
+    .med\:juscon-cen {
+        justify-content: center;
+    }
+    
+    .med\:juscon-spev {
+        justify-content: space-evenly;
+    }
+    
+    .med\:mxwd-100 {
+        max-width: 100%;
+    }
+
+    .med\:pad-zero {
+        padding: 0;
+    }
+
+    .med\:pdtb-pad{
+        padding-top: var(--padding);
+        padding-bottom: var(--padding);
+    }
+    .med\:pdlr-pad {
+        padding-left: var(--padding);
+        padding-right: var(--padding);
+    }
+    
+    .med\:padb-h5m {
+    padding-bottom: calc(var(--h5-size) * var(--gap-m) );
+    }
+
+    .med\:gap-zero {
+        gap: 0;
+    }
+    
+    .med\:grcl-1sp4 {
+        grid-column: 1 / span 4 ;
+    }
+    
+    
+    .med\:grtc-1fr {
+        grid-template-columns: 1fr;
+    }
+
+    .med\:grtc-2fr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+}
