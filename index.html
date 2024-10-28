@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>c-arts.dance</title>
+        <link rel="stylesheet" href="./style.css" />
+
+        <script>
+            // Get the browser's language setting
+            var userLang = navigator.language || navigator.userLanguage;
+        
+            // Redirect based on language
+            if (userLang.startsWith("es")) {
+                // Redirect to Spanish version if language is Spanish
+                window.location.href = "./es/index.html";
+            } else {
+                // Redirect to English version otherwise
+                window.location.href = "./en/index.html";
+            }
+        </script>
+        
+    </head>
+
+    <body>
+    </body>
+</html>
