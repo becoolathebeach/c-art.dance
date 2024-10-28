@@ -19,28 +19,28 @@
             src="./assets/images/Logo.svg"
             alt="karilian-logo"
             />
-            
 
-            <button
-                class="disp-flex 
-                        pad-pad 
-                        juscon-spbt 
-                        alnitm-cen 
-                        gap-pad 
-                        med:gap-zero 
-                        colr-whit 
-                        back-az60"
-                onclick="location.href='mailto:kevin@karilian.com';"
-                >
-                <p class="med:ftsz-zero">
-                    Contact Us
-                </p>
-                <img
-                    class="higt-1rem"
-                    src="./assets/images/email-vector.svg"
-                    alt="email icon"
-                />
-            </button>
+            <div class="disp-flex alnitm-cen">
+                <h6 class="pad-pad
+                    colr-gr90
+                    back-gr10
+                    ">
+                    EN
+                </h6>
+                <button
+                    class=" 
+                            pad-pad 
+                            gap-pad 
+                            colr-whit 
+                            back-az60"
+                    onclick="location.href='www.c-art.dance/es-ES';"
+                    >
+                    <h6>
+                        ES
+                    </h6>
+                </button>
+            </div>
+
         </header>
         
         <main>
