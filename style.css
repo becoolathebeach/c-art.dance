@@ -244,7 +244,9 @@ select {
     }
 }
 
-
+button:hover {
+    background-color: var(--violet60);
+}
 
 .alnitm-base {
     align-items: baseline;
@@ -353,6 +355,10 @@ select {
 
 .colr-az60 {
     color: var(--azul60);
+}
+
+.colr-gr10 {
+    color: var(--grey10);
 }
 
 .colr-vl60 {
