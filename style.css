@@ -298,7 +298,7 @@ select {
 }
 
 .bkim-hero2 {
-    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_2000x890.png);
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_2000x890.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,20 +306,20 @@ select {
     height: 890px;
 
     @media (max-width: 768px) {
-        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_500x2000.png);
+        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_500x2000.webp);
         height: auto;
     }
 }
 
 .bkim-comm {
-    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.jpg);
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 864px;
 
     @media (max-width: 768px) {
-        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_4x5_430px.png);
+        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_4x5_430px.webp);
         background-position: bottom center;
         height: 800px;
     }
@@ -327,11 +327,10 @@ select {
 
 
 .bkim-social {
-    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_16x9_1920px.png);
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_16x9_1920px.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    ;
 }
 
 .bord-red {
