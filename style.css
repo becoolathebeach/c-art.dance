@@ -68,11 +68,13 @@
 
 
     --white0:   #ffffff;
-    --black110: #000000;
+    --black100: #000000;
     --grey10:   #f4f4f4;
     --grey20:   #e0e0e0;
     --grey90:   #232429;
     --grey100:  #121419;
+    --black-cart: #111518;
+
 
     --gap-xs : 0.128;
     --gap-s  : 0.272;
@@ -276,7 +278,15 @@ select {
 }
 
 .back-red {
-    background: red;
+    background-color: red;
+}
+
+.back-gr90 {
+    background-color: var(--grey90);
+}
+
+.back-blca {
+    background-color: var(--black-cart);
 }
 
 .bkim-hero {
@@ -294,23 +304,27 @@ select {
     background-repeat: no-repeat;
     width: 100%;
     height: 890px;
-}
 
-.bkim-what {
-    background-image: url(./assets/images/Incision_Pompidou_Foto_Daniel_Perez_11_2000x890.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 890px;
-    opacity: 0.25;
+    @media (max-width: 768px) {
+        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_500x2000.png);
+        height: auto;
+    }
 }
 
 .bkim-comm {
-    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_16x9_1536px.jpg);
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    height: 864px;
+
+    @media (max-width: 768px) {
+        background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_4x5_430px.png);
+        background-position: bottom center;
+        height: 800px;
+    }
 }
+
 
 .bkim-social {
     background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_16x9_1920px.png);
@@ -436,7 +450,7 @@ select {
 }
 
 .logo {
-    max-width: 3rem;
+    max-width: 6rem;
 }
 
 .main-auto {
@@ -718,7 +732,6 @@ select {
 
     #tableHir2 {
         width: 100%;
-        background-color: 
     }
 
     #tableHir1 td {
@@ -726,6 +739,7 @@ select {
     }
 
     #tableHir2 td {
+        padding: 0;
     }
 
     #tableHir2 tr:nth-of-type(2n) td {
@@ -795,6 +809,10 @@ select {
     
     .med\:padb-h5m {
     padding-bottom: calc(var(--h5-size) * var(--gap-m) );
+    }
+
+    .med\:padt-40rm {
+        padding-top: 40rem;
     }
 
     .med\:gap-zero {
