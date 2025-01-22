@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuLinks = document.querySelectorAll("#menu li button"); 
   
   //carousel parameters
-  const track = document.getElementById("carousel-track");
-  const logos = [...track.children];
+  //const track = document.getElementById("carousel-track");
+  //const logos = [...track.children];
 
 //menu logic
 //list for the toggle button getting pressed

@@ -9,172 +9,418 @@
 
     <body>
         <!--Include custom script file-->
-        <script src="script.js"></script>
+        <script src="../script.js"></script>
 
-        <header class="disp-flex juscon-spbt alnitm-cen malr-auto mxwd-1536 back-whit">
-
-
-            <img
-            class="logo higt-2rem"
-            src="../assets/images/Logo.svg"
-            alt="karilian-logo"
-            />
-
-            <div class="disp-flex alnitm-cen">
-                <button
-                    class=" 
-                            pad-pad  
-                            colr-whit 
-                            back-az60"
-                    onclick="location.href='../en/index.html';"
-                    >
-                    <h6>
-                        EN
-                    </h6>
-                </button>
-                <h6 class="pad-pad
-                    colr-gr90
-                    back-gr10
-                    ">
-                    ES
-                </h6>
-            </div>
-
+        <header>
         </header>
-        
+
         <main>
-            <section id="hero" 
-                class="disp-flex 
-                flxdir-col
-                alnitm-cen 
-                juscon-cen 
-                wdth-full
-                back-gr10
-                ">
-                   
-                        
+            <section id="hero"
+                    class="disp-flex
+                        posi-rela
+                        wdth-full
+                        higt-hero
+                        "
+                >
+
+                <!--setup hero image for desktop, hide for moble
+                <img id="heroImage" 
+                    src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp"
+                    class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                    >
+
+                <video autoplay loop muted>
+                    <source src="../assets/videos/Hiraeth web discord small.mp4" 
+                            type="video/mp4"
+                            class="wdth-full higt-full obft-covr posi-absl zind-men1"
+                            >
+                </video>
+
+                -->
+
+                <video id="heroVideo" 
+                    src="../assets/videos/Hiraeth web discord small.mp4" type="video/mp4"
+                    class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                    autoplay loop muted
+                    >
+
+                    <img id="heroImage" 
+                    src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp"
+                    class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                    >
+
+                </video>
+                
+                <video id="heroImageMedia" 
+                    src="../assets/videos/Hiraeth web discord tiny.mp4" type="video/mp4"
+                    class="wdth-full higt-50pc obft-covr zind-men1 posi-absl disp-none med:disp-blck"
+                    autoplay loop muted
+                    >
+
+                    <img id="heroImage" 
+                    src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_1x1.webp"
+                    class="wdth-full higt-50pc obft-covr zind-men1 posi-absl med:disp-blck"
+                    >
+
+                </video>
+                
+                <!--setup menu-->
                 <div class="mxwd-1536
-                    malr-auto
-                    posn-rela
-                    bkim-hero2
+                wdth-full
+                malr-auto
+                disp-flex
+                flxdir-col
+                med:juscon-spbt
                 ">
-                    <div class="disp-grid
-                    grtc-41fr
-                    med:grtc-1fr
-                    gap-pad
-                    pad-pad
-                    ">
-                        <div class="grcl-1sp3 
-                                    med:grcl-1sp4 
-                                    ">
+
+                    <nav id=""
+                        class="top-1rem pdlr-pad disp-flex alnitm-cen wdth-navi">
+                            
+                            <img src="../assets/logos/carts-text.svg"
+                                class="higt-2rem marr-2rem"                            
+                            >  
+                        
+                            <ul id="menuBurger" class="disp-flex colr-whit med:disp-none">
+
+                                <li class="disp-flex">
+                                    <button onclick="location.href='./index.html'" class="back-tran">
+                                        <img src="../assets/logos/carts-text.svg"
+                                            class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                        >  
+                                    </button>
+                                    <button id="closeBurger" class="marl-auto disp-none med:disp-blck pad-pad">
+                                        <h6>X</h6>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="location.href='./productions.html'"  class="back-tran pad-pad marr-2rem">
+                                        <h6 class="colr-whit">producciones</h6>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="location.href='./team.html'"  class="back-tran pad-pad">
+                                        <h6 class="colr-whit">equipo</h6>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <ul id="menuGlobe" class="disp-none">
+                                <li class="disp-flex">
+
+                                    <button onclick="location.href='./index.html'" class="back-tran">
+                                        <img src="../assets/logos/carts-text.svg"
+                                            class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                        >
+                                    </button>  
+                                    <button id="closeGlobe" class="marl-auto disp-none med:disp-blck pad-pad">
+                                        <h6>X</h6>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="location.href='../en/index.html'" class="back-tran pad-pad marr-2rem">
+                                        <h6 class="colr-whit">english</h6>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onclick="location.href='./index.html'" class="back-tran pad-pad">
+                                        <h6 class="colr-whit">español</h6>
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <button id="toggleGlobe" class="marl-auto back-tran pad-pad disp-none med:disp-blck">
+                                <img src="../assets/logos/globe.svg"
+                                    class="higt-24px colr-whit"
+                                    >
+                            </button>
+
+                            <button id="toggleBurger" class="back-tran pad-pad disp-none med:disp-blck">
+                                <h6 class="colr-whit">&#9776;</h6>
+                            </button>
+
+                            <button onclick="location.href='../en/index.html'" class="marl-auto back-tran pad-pad med:disp-none">
+                                <h6 class="colr-whit">EN</h6>
+                            </button>
+                            
+                            <a class="back-gr90 pad-pad med:disp-none">
+                                <h6 class="colr-whit">ES</h6>
+                            </a>
+                    </nav>
+                
+                    <!--this div is needed to push text to bottom of page in mobile mode-->
+                    <div class="higt-2rem"></div>
+                    <div class="disp-grid grtc-41fr med:grtc-1fr pdlrtb-h3 med:pdlr-pad colr-whit med:colr-blck">
+                    
+                        <div class="padb-h1xs grcl-1sp2">
                             <h1>habitando el movimiento</h1>
-                            <h5 class="colr-az60">
+                        </div>
+                    
+                        <div></div>
+                    
+                        <div class="disp-flex flxdir-col juscon-cen alnitm-cen">
+                            <h5 class="padb-h5m">
                                 compañía de danza contemporánea
                             </h5>
-                            <h5 class="padb-h2m colr-az60">
-                                que combina arte+tecnología
-                            </h5>
-
-                            <div class="disp-flex
-                            gap-pad
-                            padb-h2m
-                            med:juscon-cen
-                            ">
-                                <p class="pad-pad
-                                        back-az60
-                                        colr-whit
-                                        curs-pont
-                                        ">
-                                    e-mail
-                                </p>
-                                <p class="pad-pad
-                                        back-vl60
-                                        colr-whit
-                                        curs-pont
-                                            ">
-                                    llamada 
-                                </p>
-                            </div>
+                            <button class="pad-pad back-az60">
+                                <h6 class="colr-whit">contáctanos</h6>
+                            </button>
                         </div>
-
-
-                        <div class="disp-flex 
-                                    flxdir-col 
-                                     
-                                    med:alnitm-norm 
-                                    med:grcl-1sp4 
-                                    med:mxwd-100
-                                    gap-pad
-                                    med:padt-40rm 
-                                    ">
-
-                            <h6 class="colr-whit pdlrtb-p back-az60">
-                                    PRÓXIMOS ESPECTÁCULOS
-                            </h6>
-
-                            <div class="disp-flex flxdir-row alnitm-cen juscon-spev back-whit pdlrtb-p gap-pad">
-                                
-                                <div class="disp-flex flxdir-col alnitm-cen">
-                                    <h6 class="colr-az60">HIRAETH</h6>
-                                    <h6 class="">CÓRDOBA</h6>
-                                    <h6 class="colr-az60">2 NOV</h6>
-                                </div>
-                                <div class="disp-flex flxdir-col juscon-cen">
-                                    <p class="pad-pad back-az60 disp-flex juscon-cen colr-whit">
-                                        entradas</p>
-                                </div>
-                            
-                            </div>
-
-                            <div class="disp-flex flxdir-row alnitm-cen juscon-spev back-whit pdlrtb-p gap-pad">
-                                
-                                <div class="disp-flex flxdir-col alnitm-cen">
-                                    <h6 class="colr-az60">HIRAETH</h6>
-                                    <h6 class="">MÁLAGA</h6>
-                                    <h6 class="colr-az60">15 NOV</h6>
-                                </div>
-                                <div class="disp-flex flxdir-col juscon-cen">
-                                    <p class="pad-pad back-az60 disp-flex juscon-cen colr-whit">
-                                        entradas</p>
-                                </div>
-                            
-                            </div>
-
-
-                        </div>
-                        
                     </div>
-                    
                 </div>
+
             </section>
+        
 
-            <div class="padt-5rm"></div>
-
-            <section id="what"
+            <section id="awards" 
                 class="disp-flex
-                alnitm-cen
-                juscon-cen
-                flxdir-col
-                wdth-full
+                    wdth-full
+                    back-grad
                 ">
                 <div class="mxwd-1536
                     wdth-full
                     malr-auto
-                    pdlrtb-h1
-                    med:pdlr-pad
-                    posn-rela
+                    ">
+
+                    <div class="padt-5rm"></div>
+
+                    <div class="disp-grid grtc-31fr gap-pad med:grtc-1fr">
+
+                        <div class="disp-flex flxdir-col alnitm-cen colr-whit pdlrtb-h3 text-cent">
+                            <img src="../assets/logos/LorcaDanza.png"
+                                class="mxht-6rem padb-pm">
+                            <h6>nominación</h6>
+                            <h5>mejor coreografía</h5>
+                            <h6>IX Premios Lorca</h6>
+                        </div>
+                       
+                        <div class="disp-flex flxdir-col alnitm-cen colr-whit pdlrtb-h3 text-cent">
+                            <img src="../assets/logos/ateneo.png"
+                                class="mxht-6rem padb-pm">
+                            <h6>ganador</h6>
+                            <h5>mejor espectáculo de danza</h5>
+                            <h6>Premio Ateneo de Teatro</h6>
+                        </div>
+
+                        
+                        <div class="disp-flex flxdir-col alnitm-cen colr-whit pdlrtb-h3 text-cent">
+                            <img src="../assets/logos/LorcaDanza.png"
+                                class="mxht-6rem padb-pm">
+                            <h6>nominación</h6>
+                            <h5>mejor espectáculo de danza</h5>
+                            <h6>IX Premios Lorca</h6>
+                        </div>
+
+                    </div>
+            
+                    <div class="padt-5rm"></div>
+                </div>
+
+            </section>
+
+            <section id="what" 
+            class="disp-flex
+                wdth-full
+                back-gr10
+            ">
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    ">
+                    
+                    <div class="padt-5rm"></div>
+
+                    <div class="pdlrtb-h1 med:pdlr-pad">
+                        <p>
+                            qué hacemos
+                        </p>
+                        <h1 class="colr-az60 padb-h1m">
+                            somos una compañía de artes escénicas que realiza espectáculos para teatros y espacios no convencionales.
+                        </h1>
+                        <img src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_2000x890.webp"
+                            class="mxht-60vh obft-covr">
+                    </div>
+                
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="padb-h5m">
+                            actuaciones pasadas
+                        </h5>
+                    </div>
+                
+            
+                    <div class="disp-grid grtc-51fr med:grtc-2fr gap-pad">
+                            
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/palma40.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/cochera.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/factoriaEchegaray.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/BUNY.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/Pompidou.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/nerja.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/almedinilla.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/teatroEchegaray.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/utera.png">
+                        </div>
+                        <div class="disp-flex alnitm-cen juscon-cen pad-pad">
+                            <img src="../assets/logos/Loja.png">
+                        </div>
+
+                    </div>
+
+
+                <div class="padt-5rm"></div>
+
+            </section>
+
+            <section id="hero"
+            class="disp-flex
+                posi-rela
+                wdth-full
+                higt-hero
+                "
+                >
+
+                <img id="" 
+                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-non"
+                >
+
+
+                <div class="mxwd-1536
+                wdth-full
+                malr-auto
+                med:pdlr-pad
                 ">
-                    <p>
-                        qué hacemos
-                    </p>
-                    <h1 class="colr-az60">
-                        somos una compañía de artes escénicas que realiza espectáculos para teatros y espacios no convencionales. 
-                    </h1>
+                    <div class="disp-grid grtc-21fr med:grtc-1fr pdlrtb-h1">
+                        
+                        <div class="">
+                        </div>
+                        
+                        <div class="disp-grid gap-pad med:grtc-1fr">
+                            <div class="disp-flex flxdir-col juscon-cen colr-whit pdlrtb-h3 back-whit">
+                                <h3 class="padb-h3xs colr-az60">"uno de los mejores montajes de Factoría Echegaray"</h3>
+                                <div class="disp-grid grtc-21fr juscon-cen pad-pad">
+                                    <img src="../assets/logos/factoriaEchegaray.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            
+                
+            
+            </section>
+
+            
+            <section id="carousel">
+                <div class="padt-5rm"></div>
+
+                <div class="disp-flex flxdir-col alnitm-cen">
+                    <h5 class="padb-h5xl">
+                        prensa
+                    </h5>
+                </div>
+
+                <div class="posn-rela ovfl-hidn" 
+                    id="carousel">
+
+                    <div class="disp-flex gap-2rem anim-sc10"
+                         id="carousel-track">
+                        <img src="../assets/logos/malagahoy.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/laprovincia.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/europapress.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/malagadecultura.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/20mins.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/lavanguardia.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/sur.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/lacalma.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/laopinion.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/artezblai.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/GranadaHoy.webp" alt="Logo 1" class="mxht-2rem">
+                        <img src="../assets/logos/Cadenacope.webp" alt="Logo 1" class="mxht-2rem">
+                    </div>
+                </div>
+                    
+                <div class="padt-5rm"></div>
+
+            </section>
+            <section id="hero"
+            class="disp-flex
+                posi-rela
+                wdth-full
+                higt-her
+                "
+                >
+
+                <img id="" 
+                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_39.jpg"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-non"
+                >
+
+
+                <div class="mxwd-1536
+                wdth-full
+                malr-auto
+                med:pdlr-pad
+                ">
+
+                <div class="disp-grid grtc-31fr med:grtc-1fr pdlrtb-h1">
+                    
+                    <div class="disp-flex flxdir-col colr-whit pdlrtb-h5 back-az60">
+
+                        <div class="disp-flex alnitm-cen gap-pad padb-h6m">
+                            <img class="mxwd-4rem brad-50pc ovfl-hidn"
+                                src="../assets/images/JuanAlonsoSanchez.png">
+                            <h6>Juan Alonso Sánchez</h6> 
+                        </div>
+                        <h5 class="padb-h5m">Bailar músicas que indagan con el ruido; bailar incluso el silencio, la respiración y los pies sobre el suelo como todo instrumento. Bailar coreografías tecnológicas en escenarios futuristas.</h5>
+                        <h6>Gestor cultural, Teatro Imperial Loja</h6>
+                    </div>
+                    
+                    <div class="">
+                    </div>
+                
+                </div>
+
 
                 </div>
             </section>
 
-            <div class="padt-5rm"></div>
+            <section id="quote1"
+                class="disp-flex
+                flxdir-col
+                alnitm-end
+                juscon-cen
+                wdth-full
+                back-gr10
+                ">
+
+                <div class="mxwd-1536
+                wdth-full
+                malr-auto
+                med:pdlr-pad
+                ">
+
+
+                </div>
+            </section>
 
             <section id="break"
             class="disp-flex
@@ -186,7 +432,6 @@
             ">
             </section>
             
-            <div class="padt-5rm back-gr10"></div>
                       
             <section id="how"
                 class="disp-flex
@@ -194,7 +439,6 @@
                 juscon-cen
                 flxdir-col
                 wdth-full
-                back-gr10
             ">
                 <div class="mxwd-1536
                     wdth-full
@@ -203,947 +447,42 @@
                     med:pdlr-pad
                     posn-rela
                 ">
-                    <p>
-                        cómo lo hacemos
-                    </p>
-                    <h1 class="padb-h1xs colr-az60
-                    ">
-                        nuestras herramientas
-                    </h1>
-                    <h5 class="padb-h5xl
-                    ">
-                        
-                    </h5>
 
-                    <div class="disp-grid
-                        grtc-1fr
-                        alnitm-end
-                        ">
-
-                        <h1 class="line-gr90
-                            ">
-                            DANZA
-                        </h1>
-                        <h6 class="disp-flex 
-                            flxdir-col
-                            alnitm-end
-                            colr-az60
-                            padb-h6m
-                            ">
-                            expresión a través del movimiento
-                        </h6>
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="padb-h5m">
+                            miembro actual
+                        </h5>
+                    </div>
+                    
+                    <div class="disp-flex alnitm-cen med:flxdir-col padb-h5xl">
                         
-                        <h1 class="line-gr90
-                            padt-h1xs
-                            ">
-                            MÚSICA
-                        </h1>
-                        <h6 class="disp-flex 
-                            flxdir-col
-                            alnitm-end
-                            line
-                            colr-az60
-                            padb-h6m
-                        ">
-                            lenguaje universal
-                        </h6>
-                        <h1 class="line-gr90
-                            padt-h1xs
-                            ">
-                            VISUALES
-                        </h1>
-                        <h6 class="disp-flex 
-                            flxdir-col
-                            alnitm-end
-                            line
-                            colr-az60
-                            padb-h6m
-                            ">
-                            imaǵenes poéticas
-                        </h6>
-                        <h1  class="line-gr90
-                            padt-h1xs
-                            ">
-                            DISEÑO
-                        </h1>
-                        <h6 class="disp-flex 
-                            flxdir-col
-                            alnitm-end
-                            colr-az60
-                            ">
-                            construyendo nuevos imaginarios</h6>
+                        <img src="../assets/logos/redAndalucia.png"
+                            class="higt-12rm back-gr10"
+                        >
+                        <h5 class="colr-az60 pdlrtb-h5 med:text-cent">
+                           Red Andaluza de Teatros Públicos
+                        </h5>
+                    </div>
+                   
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="padb-h5m">
+                            miembro pasado
+                        </h5>
                     </div>
 
-                </div>
+                    
+                    <div class="disp-flex alnitm-cen med:flxdir-col">
 
-            </section>
-
-            <div class="padt-5rm back-gr10"></div> 
-            
-            <section id="shows" 
-                    class="disp-flex 
-                        alnitm-cen 
-                        juscon-cen 
-                        flxdir-col
-                        bkim-social 
-                        wdth-full
-                        ">
-
-                <div class="padt-5rm"></div>
-
-                <div class="mxwd-1536
-                    wdth-full
-                    malr-auto
-                    pdlrtb-h1
-                    med:pdlr-pad 
-                    posn-rela">
-
-                    <p class="colr-whit
-                    ">
-                        nuestro trabajo
-                    </p>
-                    <h1 class="colr-whit">
-                        PRODUCCIONES                        
-                    </h1>
-                    <h5 class="padb-h5xl
-                       colr-whit
-                    ">
-                        ven a vernos en directo
-                    </h5>
-                        
-                    <div class="disp-grid
-                                med:grtc-1fr
-                                grtc-21fr
-                                gap-pad
-                                ">
-                        <div>
-                            <div class="line-whit
-                                disp-flex
-                                flxdir-col
-                                alnitm-base
-                            ">
-                                <h5 class="colr-whit
-                                ">
-                                    01.
-                                </h5>
-                                <h1 class="colr-whit
-                                ">
-                                    HIRAETH
-                                </h1>
-                            </div>
-                        </div>
-                            
-                        <div>
-                            <div class="line-whit
-                                disp-flex
-                                flxdir-col
-                                alnitm-end
-                            ">
-                                <h5 class="colr-whit">02.</h5>
-                                <h1 class="colr-whit
-                                ">
-                                    INCISIÓN
-                                </h1>
-                            </div>
-                        </div>
-
+                        <img src="../assets/logos/redMadrid.png"
+                            class="higt-12rm"
+                        >
+                        <h5 class="colr-az60 pdlrtb-h5 med:text-cent ">
+                            Red de Teatros de la Comunidad de Madrid
+                        </h5>
                     </div>
-                
-                </div>
-                
-                <div class="padt-5rm"></div>
-            </section> 
-        
-            <div class="padt-5rm"></div>
 
-            <section id="hiraeth" 
-                class="disp-flex 
-                alnitm-cen 
-                juscon-cen 
-                flxdir-col
-                wdth-full
-                ">
-
-                <div 
-                    class="mxwd-1536
-                    wdth-full
-                    malr-auto
-                    pdlrtb-h1
-                    med:pdlr-pad 
-                    posn-rela
-                    colr-gr90
-                    ">
-
-
-                        <div class="disp-grid
-                            grtc-1fr
-                            juscon-cen
-                        ">
-                            <h1 class="
-                                padb-h1m
-                            ">
-                                HIRAETH
-                            </h1>
-                        </div>
-
-                        <div class="disp-flex
-                            flxdir-col
-                            alnitm-cen
-                            med:alnitm-0
-                        ">
-                            <table 
-                                id = "tableHir1"
-                                class="brcl-colp
-                            ">
-                                <tr>
-                                    <td data-cell="role">
-                                        <h6>coreografía</h6>
-                                    </td>
-                                    <td data-cell="name"
-                                        class="">
-                                        <h5>Carolina Márquez</h5>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <div class="med:padb-h5m"></div>
-                            
-                            <table id = "tableHir1"
-                                class="brcl-colp
-                            ">
-                                <tr>
-                                    <td data-cell="role">
-                                        <h6>música</h6>
-                                    </td>
-                                    <td data-cell="name"
-                                        class="">
-                                        <h5>Carmen G. Jara</h5>
-                                    </td>
-                                </tr>     
-                            </table>
-                        </div>
-
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid
-                            grtc-21fr
-                            med:grtc-1fr
-                        ">
-                            <div class="
-                                alnitm-end
-                                med:alnitm-0
-                                pdlrtb-h5
-                                med:pad-zero
-                                disp-flex
-                                flxdir-col
-                            ">
-                                <h5>*</h5>
-                                <h6>público juvenil y adulto</h6>
-                                <h6>55 minutos</h6>
-                                <h6>estreno Noviembre 2022</h6>
-                                <h6>Teatro Echegaray, Málaga</h6>
-                            </div>
-
-                            <div class="pdlrtb-h5
-                                med:pad-zero
-                                med:pdtb-pad
-                            ">
-                                <h5 class="padb-h5xs">
-                                    sinopsis
-                                </h5>
-                                <h6 class="padb-h6m">
-                                    Hiraeth es la búsqueda de un lugar donde residan en armonía tecnología, naturaleza y humanidad.</h6>
-                                <p>
-                                    Es precisamente esta búsqueda la que inicia un proceso creativo común, desde la investigación sonora al movimiento, desde la corporeidad a la partitura. Partiendo de la abstracción, este proyecto artístico plantea temas importantes como son la experiencia con nuestro entorno natural, la extinción, los desequilibrios que puede generar la tecnología en nuestras vidas y la urgente necesidad de recuperar la empatía y el amor como forma de conexión entre seres vivos. A través de un lenguaje poético visual la obra invita al público a estar presente, a reflexionar sobre estas cuestiones. ¿Es posible reiniciar?  
-                                </p>
-                            </div>
-
-                        </div>                        
-                        
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-flex
-                            flxdir-col
-                            med:alnitm-0
-                            wdth-full
-                        ">
-                            <table id="tableHir2"
-                                class="brcl-colp
-                            ">
-                                <tr>
-                                    <td>
-                                        <h6>
-                                            Premios Ateneo de Teatro 2023
-                                        </h6>
-                                    </td>
-                                    <td>
-                                        <h5>
-                                           GANADOR 
-                                        </h5>
-                                    </td>
-                                    <td>
-                                        <h6>
-                                            mejor espectáculo de danza
-                                        </h6>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <h6>
-                                            IX Premios Lorca 2023 
-                                        </h6>
-                                    </td>
-                                    <td>
-                                        <h5>
-                                           NOMINADO 
-                                        </h5>
-                                    </td>
-                                    <td>
-                                        <h6>
-                                            mejor coreografía
-                                        </h6>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <h6>
-                                            IX Premios Lorca 2023 
-                                        </h6>
-                                    </td>
-                                    <td>
-                                        <h5>
-                                           NOMINADO 
-                                        </h5>
-                                    </td>
-                                    <td>
-                                        <h6>
-                                            mejor espectáculo de danza
-                                        </h6>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <h6>
-                                            El Certamen Bu&NY 
-                                        </h6>
-                                    </td>
-                                    <td>
-                                        <h5>
-                                            FINALISTA
-                                        </h5>
-                                    </td>
-                                    <td>
-                                        <h6>
-                                            competición coreográfica
-                                        </h6>
-                                    </td>
-                                </tr>
-
-                            </table>
-                        </div>
-                        
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid 
-                            grtc-41fr
-                            med:grtc-2fr 
-                            gap-pad
-                        ">
-
-                            <img class=""
-                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_10_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_23_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_26_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_39_4x5_430px.webp"
-                                alt=""
-                                >
-                        </div>
-                        
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid 
-                            grtc-21fr 
-                            med:grtc-1fr
-                        ">
-                            <div class="disp-flex
-                                flxdir-col
-                                alnitm-cen
-                                med:alnitm-0
-                            ">
-                                <table id="tableHir1">
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>intérpretes</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Inma Montalvo</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Marina Miguélez</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Zaida Ballesteros</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Carlos Novella</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Sandra Abril</h5>
-                                        </td>
-                                    </tr>     
-                                    
-                                </table>
-                            </div>
-                            
-
-                            <div class="disp-flex
-                                flxdir-col
-                                alnitm-cen
-                                med:alnitm-0
-                                
-                            ">
-                                <table id="tableHir1">
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>ayudantía</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Carlos L. Camps</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>iluminación</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Jorge Colomer</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>producción</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Factoría Echegaray</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>visuales</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Tama</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>vídeo</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Jorge Sarrión</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>fotografía</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Daniel Pérez</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>voz</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Stephanie Reynard</h5>
-                                        </td>
-                                    </tr>     
-                                    
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="padb-5rm"></div>
-                        
-
-                        <div class="disp-flex flxdir-col">
-                            <iframe class="youtube" width="1536" src="https://www.youtube.com/embed/bkeqrhnIYN4?si=7sJd8Uz2MalR7KQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                </div>
-
-                <div class="padb-5rm"></div>
             </section>
-
-            <section id="incision" 
-                class="disp-flex 
-                alnitm-cen 
-                juscon-cen 
-                flxdir-col
-                wdth-full 
-                back-az60
-                ">
-
-                <div class="padb-5rm"></div>
-                
-                <div 
-                    class="mxwd-1536
-                    wdth-full
-                    malr-auto
-                    pdlrtb-h1
-                    med:pdlr-pad 
-                    posn-rela
-                    ">
-
-                        <div class="disp-grid
-                            grtc-1fr
-                            juscon-cen
-                        ">
-                            <h1 class="
-                                padb-h1m
-                            ">
-                                INCISIÓN
-                            </h1>
-                        </div>
-
-                        <div class="disp-flex
-                            flxdir-col
-                            alnitm-cen
-                            med:alnitm-0
-                        ">
-                            <table 
-                                id = "tableHir1"
-                                class="brcl-colp
-                            ">
-                                <tr>
-                                    <td data-cell="role">
-                                        <h6>coreografía</h6>
-                                    </td>
-                                    <td data-cell="name"
-                                        class="">
-                                        <h5>Carolina Márquez</h5>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <div class="med:padb-h5m"></div>
-                            
-                            <table id = "tableHir1"
-                                class="brcl-colp
-                            ">
-                                <tr>
-                                    <td data-cell="role">
-                                        <h6>música</h6>
-                                    </td>
-                                    <td data-cell="name"
-                                        class="">
-                                        <h5>Carmen G. Jara</h5>
-                                    </td>
-                                </tr>     
-                            </table>
-                        </div>
-
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid
-                            grtc-21fr
-                            med:grtc-1fr
-                        ">
-                            <div class="
-                                alnitm-end
-                                med:alnitm-0
-                                pdlrtb-h5
-                                med:pad-zero
-                                disp-flex
-                                flxdir-col
-                            ">
-                                <h5>*</h5>
-                                <h6>todos los públicos</h6>
-                                <h6>25 minutos</h6>
-                                <h6>estreno Abril 2023</h6>
-                                <h6>Centre Pompidou Málaga</h6>
-                            </div>
-
-                            <div class="pdlrtb-h5
-                                med:pad-zero
-                                med:pdtb-pad
-                            ">
-                                <h5 class="padb-h5xs">
-                                    sinopsis
-                                </h5>
-                                <h6 class="padb-h6m">
-                                    Coreografía inspirada en la obra del artista plástico Lucio Fontana. 
-                                <p>
-                                    Uno de sus elementos más distintivos son las incisiones que realiza en el lienzo. Atraviesa el espacio vacío, creando una hendidura real. Fontana transforma la superficie a un nuevo estado espacial, dejando un agujero que desafía la imaginación del espectador. Esta obsesión por atravesar que propone el artista es el hilo conductor de esta performance, donde las intérpretes emulan el gesto del artista y traspasan el espacio con su movimiento.
-                                </p>
-                            </div>
-
-                        </div>                        
-                        
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid 
-                            grtc-41fr
-                            med:grtc-2fr 
-                            gap-pad
-                        ">
-
-                            <img class=""
-                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_11_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_29_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_58_4x5_430px.webp"
-                                alt=""
-                            >
-                            <img class=""
-                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_72_4x5_430px.webp"
-                                alt=""
-                                >
-                        </div>
-                        
-                        <div class="padb-5rm"></div>
-
-                        <div class="disp-grid 
-                            grtc-21fr 
-                            med:grtc-1fr
-                        ">
-                            <div class="disp-flex
-                                flxdir-col
-                                alnitm-cen
-                                med:alnitm-0
-                            ">
-                                <table id="tableHir1">
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>intérpretes</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Inma Montalvo</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Zaida Ballesteros</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <p></p>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Sandra Abril</h5>
-                                        </td>
-                                    </tr>     
-                                    
-                                </table>
-                            </div>
-                            
-
-                            <div class="disp-flex
-                                flxdir-col
-                                alnitm-cen
-                                med:alnitm-0
-                                
-                            ">
-                                <table id="tableHir1">
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>vestuario</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Buj Studio</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>producción</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>C-Art dance</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>fotografía</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Daniel Pérez</h5>
-                                        </td>
-                                    </tr>     
-                                    <tr>
-                                        <td data-cell="role">
-                                            <h6>vídeo</h6>
-                                        </td>
-                                        <td data-cell="name"
-                                            class="padl-p">
-                                            <h5>Daniel Pérez</h5>
-                                        </td>
-                                    </tr>     
-                                    
-                                </table>
-                            </div>
-                        </div>
-
-                        <div class="padb-5rm"></div>
-                        
-
-                        <div class="disp-flex flxdir-col">
-                            <iframe class="youtube" width="1536" src="https://www.youtube.com/embed/lTd8uMsPUNo?si=g5UCj7bee7Glv6IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                </div>
-
-                <div class="padb-5rm"></div>
-
-            </section>            
           
-            <section id="who" 
-                    class="disp-flex 
-                        alnitm-cen 
-                        juscon-cen 
-                        flxdir-col
-                        wdth-full 
-                        ">
-                    
-                <div class="padb-5rm"></div>
-
-                <div class="mxwd-1536
-                    wdth-full
-                    malr-auto
-                    pdlrtb-h1
-                    med:pdlr-pad 
-                    posn-rela">
-                
-                    <p>
-                        quién es C-Art dance
-                    </p>
-                    <h1 class="padb-h3m colr-az60
-                    ">
-                        conoce a nuestro equipo artístico
-                    </h1>
-
-                    <h5 class="padb-h5xs">
-                        dirección artística
-                    </h5>
-
-                    <p class="padb-h5xs">
-                        Trabajos que emergen de la sincronía entre coreógrafo y compositor, y las colaboraciones con otros artistas.
-                    </h6>
-                    
-
-
-                    <div class="disp-grid
-                                grtc-41fr
-                                med:grtc-2fr
-                                gap-pad
-                                padb-h5m
-                                ">
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Carmen_desat_autolevel_colrize50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Carmen G. Jara
-                            </h6>
-                            <p>
-                                composición musical
-                            </p>
-                        </div>
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Carolina_autolevel_colrize50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Carolina Márquez
-                            </h6>
-                            <p>
-                                coreografía
-                            </p>
-                        </div>
-                    </div>
-
-                    <h5 class="padb-h5xs">
-                        intérpretes
-                    </h5>
-
-                    <div class="disp-grid
-                    grtc-41fr
-                    med:grtc-2fr
-                    gap-pad
-                    padb-h5m
-                    ">
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Zaida_desat_autolevel_colrize50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Zaida Ballesteros
-                            </h6>
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Hiraeth_baja_E2_Foto_Daniel_Perez_02_desat_autolevel_colrise50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Carlos Novella
-                            </h6>
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Hiraeth_baja_E2_Foto_Daniel_Perez_03_desat_autolevel_colrise50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Inma Montalvo
-                            </h6>
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                            src="../assets/images/Hiraeth_baja_E2_Foto_Daniel_Perez_04_desat_autolevel_colrise50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Sandra Abril
-                            </h6>
-                            <p>
-                                
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <h5 class="padb-h5xs">
-                        dirección técnica
-                    </h5>
-
-                    <div class="disp-grid
-                                grtc-41fr
-                                med:grtc-2fr
-                                gap-pad
-                                ">
-
-                        <div class="med:pdlr-pad back-gr10 pdlrtb-h6">
-                            <img class="wdth-full padb-h6m"
-                                src="../assets/images/Kevin_desat_autolevel_colrise50_4x5_430px.webp"
-                            alt=""
-                            >                    
-                            </img>
-                            <h6 class="">
-                                Kevin Miranda
-                            </h6>
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                
-                <div class="padt-5rm"></div>
-
-            </section> 
-            
             <section id ="finale"
                 class="disp-flex 
                 alnitm-cen 
@@ -1161,17 +500,33 @@
                     posn-rela
                     ">
 
-                    <video class=""
-                        autoplay 
-                        muted
-                        plays-inline
-                        width="100%"
-                        height=""
+
+                    <div class="disp-flex flxdir-col juscon-cen alnitm-cen">
                         
+                        <h1 class="padb-h1m colr-az60">
+                            déjanos llevar nuestras producciones a tu espacio o podemos crear algo juntos
+                        </h1>
+                    </div>
+
+                    <video
+                        src="../assets/images/Logo1_Animation_Negative_squash.mp4" type="video/mp4"
+                        class="wdth-full higt-full obft-covr"
+                        autoplay loop muted
                         >
-                        <source src="../assets/images/Logo1_Animation_Negative_squash.mp4"
-                                type="video/mp4">
+                        <img id=""
+                            src="../assets/images/Logo.svg"                    
+                            class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                        >
                     </video>
+                    
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="">
+                            <button class="pad-pad back-az60">
+                                <h6 class="colr-whit">contáctanos</h6>
+                            </button>
+                        </h5>
+                    </div>
+
                     
                 </div>
 
@@ -1181,7 +536,30 @@
 
         <footer>
 
+            <section id ="finale"
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                back-blca
+                ">
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pad-pad
+                    posn-rela
+                    ">
+
+                <div class="disp-grid grtc-41fr gap-pad med:grtc-1fr">
+                    <div class="colr-whit disp-flex alnitm-cen flxdir-col juscon-cen"><p>&#169; 2025 c-arts.dance</p></div>
+
+                </div>
+            </section>
+
         </footer>
         
+
     </body>
 </html>
