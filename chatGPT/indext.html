@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    .flex-container {
+      display: flex;
+      align-items: center; /* Optional: Align vertically */
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+    .left-item {
+      margin-right: 10px; /* Add spacing between left items */
+    }
+    .right-item {
+      margin-left: auto; /* Push to the right */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="left-item">Left Item 1</div>
+    <div class="left-item">Left Item 2</div>
+    <div class="right-item">Right Item</div>
+  </div>
+</body>
+</html>

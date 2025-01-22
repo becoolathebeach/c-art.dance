@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.bkim-hero {
+    background-image: url(./assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_18_desat_autolevel_colrise50_16x9_2000x890px.webp);
+  
+}
+
+.carousel {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+  width: 100px; /* Adjust logo size */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Ensure smooth infinite loop */
+.carousel-track:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>c-art.dance</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+        <!--Include custom script file-->
+       <script src="./script.js"></script>
+
+        <header>
+        </header>
+        
+        <main>
+            
+            <section id="hero"
+            class="disp-flex
+                posi-rela
+                wdth-full
+                higt-hero
+                "
+            >
+
+                <!--setup hero image for desktop, hide for moble
+                <img id="heroImage" 
+                    src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp"
+                    class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                    >
+
+                <video autoplay loop muted>
+                    <source src="../assets/videos/Hiraeth web discord small.mp4" 
+                            type="video/mp4"
+                            class="wdth-full higt-full obft-covr posi-absl zind-men1"
+                            >
+                </video>
+
+                -->
+
+                <img id="heroImage" 
+                src="../assets/images/Hiraeth_alta_E3_Foto_Daniel_Perez_29_desat_autolevel_16x9_1920.webp"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                >
+
+                
+                <img id="heroImage" 
+                src="../assets/images/Hiraeth_alta_E3_Foto_Daniel_Perez_29_desat_autolevel_1x2_1920.webp"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl disp-none med:disp-blck"
+                >
+
+                
+                <!--setup menu-->
+                <div class="mxwd-1536
+                wdth-full
+                malr-auto
+                disp-flex
+                flxdir-col
+                ">
+
+                    <nav id=""
+                    class="top-1rem pdlr-pad disp-flex alnitm-cen wdth-navi">
+                        
+                        <button onclick="location.href='./index.html'" class="back-tran">
+                            <img src="../assets/logos/carts-text.svg"
+                                class="higt-2rem marr-2rem"                            
+                            >  
+                        </button>
+                    
+                        <ul id="menuBurger" class="disp-flex colr-whit med:disp-none">
+
+                            <li class="disp-flex">
+                                <button onclick="location.href='./index.html'" class="back-tran">
+                                    <img src="../assets/logos/carts-text.svg"
+                                        class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                    >  
+                                </button>
+                                <button id="closeBurger" class="marl-auto disp-none med:disp-blck pad-pad">
+                                    <h6>X</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./productions.html'"  class="back-tran pad-pad marr-2rem">
+                                    <h6 class="colr-whit">producciones</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./team.html'"  class="back-tran pad-pad">
+                                    <h6 class="colr-whit">equipo</h6>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul id="menuGlobe" class="disp-none">
+                            <li class="disp-flex">
+
+                                <button onclick="location.href='./index.html'" class="back-tran">
+                                    <img src="../assets/logos/carts-text.svg"
+                                        class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                    >
+                                </button>  
+                                <button id="closeGlobe" class="marl-auto disp-none med:disp-blck pad-pad">
+                                    <h6>X</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='../en/team.html'" class="back-tran pad-pad marr-2rem">
+                                    <h6 class="colr-whit">english</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./team.html'" class="back-tran pad-pad">
+                                    <h6 class="colr-whit">español</h6>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <button id="toggleGlobe" class="marl-auto back-tran pad-pad disp-none med:disp-blck">
+                            <img src="../assets/logos/globe.svg"
+                                class="higt-24px colr-whit"
+                                >
+                        </button>
+
+                        <button id="toggleBurger" class="back-tran pad-pad disp-none med:disp-blck">
+                            <h6 class="colr-whit">&#9776;</h6>
+                        </button>
+
+                        <button onclick="location.href='../en/team.html'" class="back-tran pad-pad med:disp-none marl-auto">
+                            <h6 class="colr-whit">EN</h6>
+                        </button>
+                        
+                        <a class="back-gr90 pad-pad med:disp-none">
+                            <h6 class="colr-whit">ES</h6>
+                        </a>
+                    </nav>
+                
+                    <!--this div is needed to push text to bottom of page in mobile mode-->
+                    
+                    <div class="pdlrtb-h1 higt-full disp-flex flxdir-col juscon-spbt med:pdlr-pad">
+
+                        <div>
+                            <p class="colr-az60">
+                                quién es C-art.dance
+                            </p>
+                            <h1 class="colr-az60">
+                                conoce a nuestro equipo                        
+                            </h1>
+                        </div>
+                            
+                    </div>
+
+
+                </div>
+
+            </section>     
+
+
+
+
+
+            <section id="who" 
+                    class="disp-flex 
+                        alnitm-cen 
+                        juscon-cen 
+                        flxdir-col
+                        wdth-full 
+                        ">
+                    
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pdlrtb-h1
+                    med:pdlr-pad 
+                    posn-rela">
+                
+                    <h3 class="padb-h3xs">
+                        dirección artística
+                    </h3>
+
+                    <div class="disp-grid
+                    grtc-41fr
+                    med:grtc-1fr
+                    gap-pad
+                    padb-h1m
+                    ">
+
+                        <div class=" pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Carmen_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h5xs">
+                                Carmen G. Jara
+                            </h5>
+                            <h6 class="padb-h6m">
+                                composición musical
+                            </h6>
+                        </div>
+
+                        <div class=" pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Carolina_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h5xs">
+                                Carolina Márquez
+                            </h5>
+                            <h6 class="padb-h6m">
+                                coreografía
+                            </h6>
+                        </div>
+
+
+
+                    </div>                    
+
+                    <h3 class="padb-h3xs">
+                        colaboradores
+                    </h3>
+
+                    <div class="disp-grid
+                    grtc-41fr
+                    med:grtc-1fr
+                    gap-pad
+                    padb-h1m
+                    ">
+
+                        <div class="pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Zaida_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h6m">
+                                Zaida Ballesteros
+                            </h5>
+                        </div>
+
+                        <div class="pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Carlos_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h6m">
+                                Carlos Novella
+                            </h5>
+                        </div>
+
+                        <div class="pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Inma_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h6m">
+                                Inma Montalvo
+                            </h5>
+                        </div>
+
+                        <div class="pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Sandrawe_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h6m">
+                                Sandra Abril
+                            </h5>
+                        </div>
+
+                        <div class=" pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                            src="../assets/images/Carlos_bajo_desat_autolevel_colrize50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h5xs">
+                                Carlos L. Camps
+                            </h5>
+                            <h6 class="padb-h6m">
+                                
+                            </h6>
+                        </div>
+                    </div>
+
+
+                    <h3 class="padb-h3xs">
+                        dirección técnica
+                    </h3>
+
+                    <div class="disp-grid
+                                grtc-41fr
+                                med:grtc-1fr
+                                gap-pad
+                                ">
+
+                        <div class="pdlrtb-h6 med:pad-zero">
+                            <img class="wdth-full padb-h6m"
+                                src="../assets/images/Kevin_desat_autolevel_colrise50_4x5_430px.webp"
+                            alt=""
+                            >                    
+                            </img>
+                            <h5 class="padb-h6xs">
+                                Kevin Miranda
+                            </h5>
+                            <h6 class="padb-h5m">
+                                software
+                            </h6>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+            </section> 
+            
+            <section id ="finale"
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                back-blca
+                ">
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pdlrtb-h1
+                    med:pdlr-pad 
+                    posn-rela
+                    ">
+
+
+                    <div class="disp-flex flxdir-col juscon-cen alnitm-cen">
+                        <h1 class="padb-h1m colr-az60">
+                        </h1>
+                    </div>
+
+                    <video
+                        src="../assets/images/Logo1_Animation_Negative_squash.mp4" type="video/mp4"
+                        class="wdth-full higt-full obft-covr"
+                        autoplay loop muted
+                        >
+                        <img id=""
+                            src="../assets/images/Logo.svg"                    
+                            class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                        >
+                    </video>
+                    
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="">
+                            <button class="pad-pad back-az60">
+                                <h6 class="colr-whit">contáctanos</h6>
+                            </button>
+                        </h5>
+                    </div>
+
+                    
+                </div>
+
+            </section>
+
+
+
+
+
+        </main>
+
+        <footer>
+            <section id ="finale"
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                back-blca
+                ">
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pad-pad
+                    posn-rela
+                    ">
+
+                <div class="disp-grid grtc-41fr gap-pad med:grtc-1fr">
+                    <div class="colr-whit disp-flex alnitm-cen flxdir-col juscon-cen"><p>&#169; 2025 c-arts.dance</p></div>
+
+                </div>
+            </section>
+        </footer>
+        
+
+    </body>
+</html>

@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>c-art.dance</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+
+    <body>
+        <!--Include custom script file-->
+        <script src="./script.js"></script>
+
+        <header> 
+        </header>
+        
+        <main>
+
+            <section id="hero"
+                    class="disp-flex
+                        posi-rela
+                        wdth-full
+                        higt-hero
+                        "
+                >
+
+                <!--setup hero image for desktop, hide for moble
+                <img id="heroImage" 
+                    src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_46_desat_autolevel_colrise50_16x9_1536px.webp"
+                    class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                    >
+
+                <video autoplay loop muted>
+                    <source src="../assets/videos/Hiraeth web discord small.mp4" 
+                            type="video/mp4"
+                            class="wdth-full higt-full obft-covr posi-absl zind-men1"
+                            >
+                </video>
+
+                -->
+
+                <img id="heroImage" 
+                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_16x9_1920px.webp"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                >
+
+                
+                <img id="heroImage" 
+                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_13_1x1_1920px.webp"
+                class="wdth-full higt-full obft-covr zind-men1 posi-absl disp-none med:disp-blck"
+                >
+
+                
+                <!--setup menu-->
+                <div class="mxwd-1536
+                wdth-full
+                malr-auto
+                disp-flex
+                flxdir-col
+                ">
+                    <nav id=""
+                    class="top-1rem pdlr-pad disp-flex alnitm-cen wdth-navi">
+                        
+                        <button onclick="location.href='./index.html'" class="back-tran">
+                            <img src="../assets/logos/carts-text.svg"
+                                class="higt-2rem marr-2rem"                            
+                            >  
+                        </button>
+                    
+                        <ul id="menuBurger" class="disp-flex colr-whit med:disp-none">
+
+                            <li class="disp-flex marb-2rem">
+                                <button onclick="location.href='./index.html'" class="back-tran">
+                                    <img src="../assets/logos/carts-text.svg"
+                                        class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                    >  
+                                </button>
+                                <button id="closeBurger" class="marl-auto disp-none med:disp-blck pad-pad">
+                                    <h6>X</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./productions.html'"  class="back-tran pad-pad marr-2rem">
+                                    <h6 class="colr-whit">productions</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./team.html'"  class="back-tran pad-pad">
+                                    <h6 class="colr-whit">team</h6>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <ul id="menuGlobe" class="disp-none">
+                            
+                            <li class="disp-flex marb-2rem">
+
+                                <button onclick="location.href='./index.html'" class="back-tran">
+                                    <img src="../assets/logos/carts-text.svg"
+                                        class="higt-2rem marr-2rem disp-none med:disp-blck"                            
+                                    >
+                                </button>  
+                                <button id="closeGlobe" class="marl-auto disp-none med:disp-blck pad-pad">
+                                    <h6>X</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='./productions.html'" class="back-tran pad-pad marr-2rem">
+                                    <h6 class="colr-whit">english</h6>
+                                </button>
+                            </li>
+                            <li>
+                                <button onclick="location.href='../es/productions.html'" class="back-tran pad-pad">
+                                    <h6 class="colr-whit">español</h6>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <button id="toggleGlobe" class="marl-auto back-tran pad-pad disp-none med:disp-blck">
+                            <img src="../assets/logos/globe.svg"
+                                class="higt-24px colr-whit"
+                                >
+                        </button>
+
+                        <button id="toggleBurger" class="back-tran pad-pad disp-none med:disp-blck">
+                            <h6 class="colr-whit">&#9776;</h6>
+                        </button>
+
+                        <a class="back-gr90 pad-pad med:disp-none marl-auto">
+                            <h6 class="colr-whit">EN</h6>
+                        </a>
+                        
+                        <button onclick="location.href='../es/productions.html'" class="back-tran pad-pad med:disp-none">
+                            <h6 class="colr-whit">ES</h6>
+                        </button>
+                    </nav>
+                
+                    <!--this div is needed to push text to bottom of page in mobile mode-->
+                    
+                    <div class="pdlrtb-h1 higt-full disp-flex flxdir-col juscon-spbt med:pdlr-pad">
+
+                        <div>
+                            <p class="colr-whit">
+                                our work
+                            </p>
+                            <h1 class="colr-whit">
+                                current productions                        
+                            </h1>
+                            <h5 class="padb-h5xl
+                            colr-whit
+                            ">
+                                come and see us live
+                            </h5>
+                        </div>
+                            
+                        <div class="disp-grid
+                                    med:grtc-1fr
+                                    grtc-21fr
+                                    gap-pad
+                                    ">
+                            <button class="back-tran" onclick="location.href='#hiraeth'">
+                                <div class="line-whit
+                                    disp-flex
+                                    flxdir-col
+                                    alnitm-base
+                                ">
+                                    <h5 class="colr-whit
+                                    ">
+                                        01.
+                                    </h5>
+                                    <h1 class="colr-whit
+                                    ">
+                                        HIRAETH
+                                    </h1>
+                                </div>
+                            </button>
+                                
+                            <button class="back-tran" onclick="location.href='#incision'">
+                                <div class="line-whit
+                                    disp-flex
+                                    flxdir-col
+                                    alnitm-end
+                                ">
+                                    <h5 class="colr-whit">02.</h5>
+                                    <h1 class="colr-whit
+                                    ">
+                                        INCISION
+                                    </h1>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <div class="padt-5rm"></div>
+
+            <section id="hiraeth" 
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                ">
+
+                <div 
+                    class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pdlrtb-h1
+                    med:pdlr-pad 
+                    posn-rela
+                    colr-gr90
+                    ">
+
+
+                        <div class="disp-grid
+                            grtc-1fr
+                            juscon-cen
+                        ">
+                            <h1 class="
+                                padb-h1m
+                            ">
+                                HIRAETH
+                            </h1>
+                        </div>
+
+                        <div class="disp-flex
+                            flxdir-col
+                            alnitm-cen
+                            med:alnitm-0
+                        ">
+                            <table 
+                                id = "tableHir1"
+                                class="brcl-colp
+                            ">
+                                <tr>
+                                    <td data-cell="role">
+                                        <h6>choreograpy</h6>
+                                    </td>
+                                    <td data-cell="name"
+                                        class="">
+                                        <h5>Carolina Márquez</h5>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="med:padb-h5m"></div>
+                            
+                            <table id = "tableHir1"
+                                class="brcl-colp
+                            ">
+                                <tr>
+                                    <td data-cell="role">
+                                        <h6>music</h6>
+                                    </td>
+                                    <td data-cell="name"
+                                        class="">
+                                        <h5>Carmen G. Jara</h5>
+                                    </td>
+                                </tr>     
+                            </table>
+                        </div>
+
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid
+                            grtc-21fr
+                            med:grtc-1fr
+                        ">
+                            <div class="
+                                alnitm-end
+                                med:alnitm-0
+                                pdlrtb-h5
+                                med:pad-zero
+                                disp-flex
+                                flxdir-col
+                            ">
+                                <h5>*</h5>
+                                <h6>general public</h6>
+                                <h6>55 minutes</h6>
+                                <h6>premiered November 2022</h6>
+                                <h6>Teatro Echegaray, Málaga</h6>
+                            </div>
+
+                            <div class="pdlrtb-h5
+                                med:pad-zero
+                                med:pdtb-pad
+                            ">
+                                <h5 class="padb-h5xs">
+                                    synopsis
+                                </h5>
+                                <h6 class="padb-h6m">
+                                    Hiraeth is the search for a place where technology, nature and humanity reside in harmony.
+                                </h6>
+                                <p>
+                                    It is precisely this search that begins a common creative process, from sound research to movement, from corporeality to the score. Starting from abstraction, this artistic project raises important topics such as the experience with our natural environment, extinction, the imbalances that technology can generate in our lives and the urgent need to recover empathy and love as a form of connection between human beings. Through a poetic visual language, the work invites the public to be present, to reflect on these questions. Is it possible to restart?
+                                </p>
+                            </div>
+
+                        </div>                        
+                        
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-flex
+                            flxdir-col
+                            med:alnitm-0
+                            wdth-full
+                        ">
+                            <table id="tableHir2"
+                                class="brcl-colp
+                            ">
+                                <tr>
+                                    <td>
+                                        <h6>
+                                            Premio Ateneo de Teatro 2024
+                                        </h6>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                           WINNER 
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h6>
+                                            best dance spectacular
+                                        </h6>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h6>
+                                            IX Premios Lorca 2023 
+                                        </h6>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                           NOMINATED 
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h6>
+                                            best choreographer
+                                        </h6>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h6>
+                                            IX Premios Lorca 2023 
+                                        </h6>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                           NOMINATED 
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h6>
+                                            best dance spectacular
+                                        </h6>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <h6>
+                                            El Certamen Bu&NY 
+                                        </h6>
+                                    </td>
+                                    <td>
+                                        <h5>
+                                            FINALIST
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h6>
+                                            choreograpy competition
+                                        </h6>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid 
+                            grtc-41fr
+                            med:grtc-2fr 
+                            gap-pad
+                        ">
+
+                            <img class=""
+                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_10_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_23_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_26_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Ensayo_general_Hiraeth_alta_Foto_Daniel_Perez_39_4x5_430px.webp"
+                                alt=""
+                                >
+                        </div>
+                        
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid 
+                            grtc-21fr 
+                            med:grtc-1fr
+                        ">
+                            <div class="disp-flex
+                                flxdir-col
+                                alnitm-cen
+                                med:alnitm-0
+                            ">
+                                <table id="tableHir1">
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>original cast</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Inma Montalvo</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Marina Miguélez</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Zaida Ballesteros</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Carlos Novella</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Sandra Abril</h5>
+                                        </td>
+                                    </tr>     
+                                    
+                                </table>
+                            </div>
+                            
+
+                            <div class="disp-flex
+                                flxdir-col
+                                alnitm-cen
+                                med:alnitm-0
+                                
+                            ">
+                                <table id="tableHir1">
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>assistent director</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Carlos L. Camps</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>lighting</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Jorge Colomer</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>production</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Factoría Echegaray</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>video mapping</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Tama</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>video</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Jorge Sarrión</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>photography</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Daniel Pérez</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>voice</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Stephanie Reynard</h5>
+                                        </td>
+                                    </tr>     
+                                    
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="padb-5rm"></div>
+                        
+
+                        <div class="disp-flex flxdir-col">
+                            <iframe class="youtube" width="1536" src="https://www.youtube.com/embed/bkeqrhnIYN4?si=7sJd8Uz2MalR7KQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                </div>
+
+                <div class="padb-5rm"></div>
+            </section>
+
+            <section id="incision" 
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full 
+                back-az60
+                ">
+
+                <div class="padb-5rm"></div>
+                
+                <div 
+                    class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pdlrtb-h1
+                    med:pdlr-pad 
+                    posn-rela
+                    ">
+
+                        <div class="disp-grid
+                            grtc-1fr
+                            juscon-cen
+                        ">
+                            <h1 class="
+                                padb-h1m
+                            ">
+                                INCISIÓN
+                            </h1>
+                        </div>
+
+                        <div class="disp-flex
+                            flxdir-col
+                            alnitm-cen
+                            med:alnitm-0
+                        ">
+                            <table 
+                                id = "tableHir1"
+                                class="brcl-colp
+                            ">
+                                <tr>
+                                    <td data-cell="role">
+                                        <h6>choreograpy</h6>
+                                    </td>
+                                    <td data-cell="name"
+                                        class="">
+                                        <h5>Carolina Márquez</h5>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="med:padb-h5m"></div>
+                            
+                            <table id = "tableHir1"
+                                class="brcl-colp
+                            ">
+                                <tr>
+                                    <td data-cell="role">
+                                        <h6>music</h6>
+                                    </td>
+                                    <td data-cell="name"
+                                        class="">
+                                        <h5>Carmen G. Jara</h5>
+                                    </td>
+                                </tr>     
+                            </table>
+                        </div>
+
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid
+                            grtc-21fr
+                            med:grtc-1fr
+                        ">
+                            <div class="
+                                alnitm-end
+                                med:alnitm-0
+                                pdlrtb-h5
+                                med:pad-zero
+                                disp-flex
+                                flxdir-col
+                            ">
+                                <h5>*</h5>
+                                <h6>general public</h6>
+                                <h6>25 minutes</h6>
+                                <h6>premiered April 2023</h6>
+                                <h6>Centre Pompidou Málaga</h6>
+                            </div>
+
+                            <div class="pdlrtb-h5
+                                med:pad-zero
+                                med:pdtb-pad
+                            ">
+                                <h5 class="padb-h5xs">
+                                    synopsis
+                                </h5>
+                                <h6 class="padb-h6m">
+                                    Choreography inspired by the work of the plastic artist Lucio Fontana.
+                                </h6>
+                                <p>
+                                    One of his most distinctive elements are the incisions he makes on the canvas. It traverses the empty space, creating a real indentation. Fontana transforms the surface into a new spatial state, leaving a hole that defies the viewer's imagination. This obsession with traversing that the artist proposes is the guiding thread of this performance, where the performers emulate the artist's gesture and go beyond the space with their movement.
+                                </p>
+                            </div>
+
+                        </div>                        
+                        
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid 
+                            grtc-41fr
+                            med:grtc-2fr 
+                            gap-pad
+                        ">
+
+                            <img class=""
+                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_11_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_29_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_58_4x5_430px.webp"
+                                alt=""
+                            >
+                            <img class=""
+                                src="../assets/images/Incision_Pompidou_Foto_Daniel_Perez_72_4x5_430px.webp"
+                                alt=""
+                                >
+                        </div>
+                        
+                        <div class="padb-5rm"></div>
+
+                        <div class="disp-grid 
+                            grtc-21fr 
+                            med:grtc-1fr
+                        ">
+                            <div class="disp-flex
+                                flxdir-col
+                                alnitm-cen
+                                med:alnitm-0
+                            ">
+                                <table id="tableHir1">
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>original cast</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Inma Montalvo</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Zaida Ballesteros</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <p></p>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Sandra Abril</h5>
+                                        </td>
+                                    </tr>     
+                                    
+                                </table>
+                            </div>
+                            
+
+                            <div class="disp-flex
+                                flxdir-col
+                                alnitm-cen
+                                med:alnitm-0
+                                
+                            ">
+                                <table id="tableHir1">
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>costumes</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Buj Studio</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>production</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>C-Art</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>video</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Daniel Pérez</h5>
+                                        </td>
+                                    </tr>     
+                                    <tr>
+                                        <td data-cell="role">
+                                            <h6>photography</h6>
+                                        </td>
+                                        <td data-cell="name"
+                                            class="padl-p">
+                                            <h5>Daniel Pérez</h5>
+                                        </td>
+                                    </tr>     
+                                    
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="padb-5rm"></div>
+                        
+
+                        <div class="disp-flex flxdir-col">
+                            <iframe class="youtube" width="1536" src="https://www.youtube.com/embed/lTd8uMsPUNo?si=g5UCj7bee7Glv6IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                </div>
+
+                <div class="padb-5rm"></div>
+
+            </section>            
+                      
+            <section id ="finale"
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                back-blca
+                ">
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pdlrtb-h1
+                    med:pdlr-pad 
+                    posn-rela
+                    ">
+
+
+                    <div class="disp-flex flxdir-col juscon-cen alnitm-cen">
+                        
+                        <h1 class="padb-h1m colr-az60">
+                            let's do something together
+                        </h1>
+                    </div>
+
+                    <video
+                        src="../assets/images/Logo1_Animation_Negative_squash.mp4" type="video/mp4"
+                        class="wdth-full higt-full obft-covr"
+                        autoplay loop muted
+                        >
+                        <img id=""
+                            src="../assets/images/Logo.svg"                    
+                            class="wdth-full higt-full obft-covr zind-men1 posi-absl med:disp-none"
+                        >
+                    </video>
+                    
+                    <div class="disp-flex flxdir-col alnitm-cen">
+                        <h5 class="">
+                            <button class="pad-pad back-az60">
+                                <h6 class="colr-whit">contact us</h6>
+                            </button>
+                        </h5>
+                    </div>
+
+                    
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <section id ="finale"
+                class="disp-flex 
+                alnitm-cen 
+                juscon-cen 
+                flxdir-col
+                wdth-full
+                back-blca
+                ">
+
+                <div class="mxwd-1536
+                    wdth-full
+                    malr-auto
+                    pad-pad
+                    posn-rela
+                    ">
+
+                <div class="disp-grid grtc-41fr gap-pad med:grtc-1fr">
+                    <div class="colr-whit disp-flex alnitm-cen flxdir-col juscon-cen"><p>&#169; 2025 c-arts.dance</p></div>
+
+                </div>
+            </section>
+
+        </footer>
+
+    </body>
+</html>
