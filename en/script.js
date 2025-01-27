@@ -50,3 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   });
+
+  function toggleBio(divId) {
+    const div = document.getElementById(divId);
+    //const button = document.getElementById('toggleBioCarmen');
+
+    // Toggle the display property
+    if (div.style.display === 'none' || div.style.display === '') {
+      div.style.display = 'block';
+      //button.textContent = '-'; // Change button to "-" when div is visible
+    } else {
+      div.style.display = 'none';
+      //button.textContent = '+'; // Change button back to "+" when div is hidden
+    }
+  }
