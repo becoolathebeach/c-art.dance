@@ -836,7 +836,12 @@ button:hover {
 }
 
 
-
+.page-break {
+    page-break-before: always;
+    /* For older browsers */
+    break-before: page;
+    /* Modern browsers */
+}
 
 
 .pdlrtb-h1 {
@@ -1004,6 +1009,38 @@ button:hover {
     }
 }
 
+
+@media print {
+
+
+    body {}
+
+    .print\:back-gr10 {
+        background: var(--grey10);
+    }
+
+    .print\:disp-none {
+        display: none;
+    }
+
+    .print\:disp-blck {
+        display: block;
+    }
+
+
+    .print\:pdlrtb-h5 {
+        --h5-space-diff: calc(calc(var(--h5-line) - var(--h5-size)) * 0.5);
+        padding-top: calc(var(--h5-size) - var(--h5-space-diff));
+
+        padding-left: var(--h5-size);
+        padding-right: var(--h5-size);
+        padding-bottom: var(--h5-size);
+    }
+
+    .print\:grcl-1sp1 {
+        grid-column: span 1;
+    }
+}
 
 @media (max-width: 768px) {
 
