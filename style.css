@@ -1027,6 +1027,10 @@ button:hover {
         display: block;
     }
 
+    .print\:disp-flex {
+        display: flex;
+    }
+
 
     .print\:pdlrtb-h5 {
         --h5-space-diff: calc(calc(var(--h5-line) - var(--h5-size)) * 0.5);
