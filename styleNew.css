@@ -1,0 +1,228 @@
+/*see Ken Taylor Figma doc
+ *
+ *font			        size    line	weight	short	map
+ *name			        SM	MAX	SM	MAX		    ID	    to
+ * ---------------------------------------------------------------------------
+ *fluid-display-03	    42	84	50	94	    600 FD-03	h1
+ *fluid-quotation-02	32	60	40	70	    300 FQ-02	h2
+ *fluid-heading-06	    32	60	40	70	    600 FH-06	h3
+ *fluid-heading-05	    32	60	40	70	    300 FH-05	h4
+ *fluid-heading-04	    28	32	36	40	    300 FH-04	h5
+ *heading-compact-02 	-	1.0	-	1.375	600	HC-02	h6
+ *body-02		        -	1.0	-	1.5	    400	BD-02	p
+ *
+ * for clamp() ramping, see "https://modern-fluid-typography.vercel.app/"
+ *
+ *
+ */
+
+
+:root {
+    --h1-size: clamp(2.625rem, 5vw + 1.5rem, 5.25rem);
+    --h1-line: clamp(3.125rem, 5vw + 2rem, 5.875rem);
+    --h1-weight: 600;
+
+    --h2-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h2-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h2-weight: 300;
+
+    --h3-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h3-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h3-weight: 600;
+
+    --h4-size: clamp(2rem, 5vw + 1rem, 3.75rem);
+    --h4-line: clamp(2.5rem, 5vw + 1.25rem, 4.375rem);
+    --h4-weight: 300;
+
+    --h5-size: clamp(1.75rem, 2vw + 1.25rem, 2rem);
+    --h5-line: clamp(2.25rem, 4vw + 1.25rem, 2.5rem);
+    --h5-weight: 300;
+
+    --h6-size: 1rem;
+    --h6-line: 1.375rem;
+    --h6-weight: 600;
+
+    --p-size: 12px;
+    --p-line: 16px;
+    --p-weight: 400;
+
+
+    --azul60: #2D61FF;
+
+    --neonblue60: #4E5EF7;
+    --royalblue60: #6B59EF;
+    --iris60: #8351E7;
+    --purpleheart60: #9846E0;
+    --darkviolet60: #AC37D6;
+    --violet60: #BE21CC;
+
+
+
+    --purple30hover: #c5a3ff;
+    --red30hover: #ff99a0;
+    --green20hover: #74e792;
+    --yellow10: #fafa77;
+    --orange30hover: #ff9d57;
+    --blue40hover: #5c97ff;
+    --magenta20hover: #ffbdda;
+
+
+    --white0: #ffffff;
+    --black100: #000000;
+    --grey10: #f4f4f4;
+    --grey20: #e0e0e0;
+    --grey90: #232429;
+    --grey100: #121419;
+    --black-cart: #111518;
+
+
+    --gap-xs: 0.128;
+    --gap-s: 0.272;
+    --gap-m: 0.618;
+    --gap-l: 1;
+    --gap-xl: 1.618;
+    --gap-xxl: 2.618;
+
+
+    --font-size: 16px;
+    --ff: "geo";
+    --padding: 1rem;
+    --max-width: 1536px;
+
+}
+
+@font-face {
+    font-family: "geo";
+    font-style: normal;
+    font-weight: 300;
+    src: url(./assets/fonts/GeologicaRoman-Thin.woff2);
+}
+
+@font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./assets/fonts/GeologicaRoman-ExtraLight.woff2);
+}
+
+@font-face {
+    font-family: "fira";
+    font-style: normal;
+    font-weight: 600;
+    src: url(./assets/fonts/GeologicaRoman-Light.woff2);
+}
+
+h1 {
+    font-family: var(--ff);
+    font-size: var(--h1-size);
+    line-height: var(--h1-line);
+    font-weight: var(--h1-weight);
+}
+
+
+h2 {
+    font-family: var(--ff);
+    font-size: var(--h2-size);
+    line-height: var(--h2-line);
+    font-weight: var(--h2-weight);
+}
+
+h3 {
+    font-family: var(--ff);
+    font-size: var(--h3-size);
+    line-height: var(--h3-line);
+    font-weight: var(--h3-weight);
+}
+
+h4 {
+    font-family: var(--ff);
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
+    font-weight: var(--h4-weight);
+}
+
+h5 {
+    font-family: var(--ff);
+    font-size: var(--h5-size);
+    line-height: var(--h5-line);
+    font-weight: var(--h5-weight);
+}
+
+h6 {
+    font-family: var(--ff);
+    font-size: var(--h6-size);
+    line-height: var(--h6-line);
+    font-weight: var(--h6-weight);
+}
+
+p {
+    font-family: var(--ff);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    font-weight: var(--p-weight);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: var(--font-size);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+
+.alnitm-cen {
+    align-items: center;
+}
+
+.back-az60 {
+    background-color: var(--azul60);
+}
+
+.disp-flex {
+    display: flex;
+}
+
+.flxdir-col {
+    flex-direction: column;
+}
+
+.obft-covr {
+    object-fit: cover ;
+}
+
+.obft-cont {
+    object-fit: contain ;
+}
+
+.higt-500px {
+    max-height: 500px;
+}
+
+.higt-100p {
+    height: 100%;
+}
+
+.ovfl-hidn {
+    overflow: hidden;
+}
+
+.pdlr-1rem{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
